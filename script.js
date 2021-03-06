@@ -2,11 +2,13 @@ function compute()
 {
 
     // Get the values from the form
-    var principal = document.getElementById("principal").value;
+    var principalField = document.getElementById("principal");
+
+    principal = principalField.value;
 
     if (principal <= 0) {
         alert("Enter a positive number");
-        document.getElementById("principal").focus();
+        principalField.focus();
         return;
     }
 
